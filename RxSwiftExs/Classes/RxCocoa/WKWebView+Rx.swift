@@ -35,7 +35,7 @@ extension WKWebView: AssociatedObjectStore {
 class RxWKWebViewHandlerProxy
     : DelegateProxy<WKWebView,WKScriptMessageHandler>
     , DelegateProxyType
-,WKScriptMessageHandler {
+    ,WKScriptMessageHandler {
     
     public weak private(set) var webView:WKWebView?
     fileprivate var _didReceiveMessagePublishSubject: PublishSubject<(WKScriptMessage)>?
@@ -67,7 +67,6 @@ class RxWKWebViewHandlerProxy
     }
     
     deinit {
-        webView?.handler = nil
         if let subject = _didReceiveMessagePublishSubject {
             subject.on(.completed)
         }
