@@ -1,0 +1,32 @@
+PODS:
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - RxSwiftExs (0.1.0):
+    - RxCocoa
+    - RxSwift
+    - RxSwiftExs/Core (= 0.1.0)
+  - RxSwiftExs/Core (0.1.0):
+    - RxCocoa
+    - RxSwift
+
+DEPENDENCIES:
+  - RxSwiftExs (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxSwift
+
+EXTERNAL SOURCES:
+  RxSwiftExs:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxSwiftExs: 2acba2b399277a3a1ae990d79f10697d8ef396be
+
+PODFILE CHECKSUM: 82e193b719aea19f77ac2f9e1d0e7f2d87b46590
+
+COCOAPODS: 1.6.0.beta.1
